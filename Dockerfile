@@ -11,3 +11,7 @@ COPY . .
 EXPOSE 50001
 
 CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-50001}"]
+
+
+# docker build -t dynamicphillic/mediconnectionchatbotapi:v1.0 .
+# docker push dynamicphillic/mediconnectionchatbotapi:v1.0
